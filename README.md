@@ -4,8 +4,7 @@ The industry standard distributed version control system
 ## What problem does it solve?
 - Alice and Bob are working on a project together for school
 - They need to share code and turn it in
-- They don't know the proper way to do this, so they paste their code in a Google Doc
-- They code on the same file at the same time
+- They don't know the proper way to do this, so they paste their code into a Google Doc
 
 ### Problem 1:
 - Alice and Bob copy the Google Doc into their own IDE's
@@ -17,7 +16,6 @@ The industry standard distributed version control system
 - The night before submitting the project, both Alice and Bob make changes to different parts of the code
 - They compile the code and the program breaks. They want to go back to an old version to try and fix the breaking changes
 - How do they revert JUST the breaking changes?
-- They can't
 
 ### Problem 3:
 - Alice and Bob finally complete their project
@@ -60,12 +58,17 @@ Navigate to this repository in GitHub Desktop.
 - This file path will contain your local copy of the repository
 - Your local repository is set up to push and pull changes from the remote
 
+## Fetch code from the remote
+Fetching updates your local repository with all the latest history from the remote.
+- Navigate to "fetch" in GitHub Desktop
+- It may then prompt you to "pull" the code into your local branch. This updates the code on that branch
+
 ## Create a branch
 ### What is a branch?
 - A version of the source code within the repository
 - Each branch contains its own history of commits
 - Typically, a branch is used for individual development and then merged into a main branch
-- When you create a branch for the purpose of making a change, adding a feature, or fixing an issue, it is called a feature branch.
+- When you create a branch for the purpose of making a change, adding a feature, or fixing an issue, it is called a feature branch
 
 ### Creating the branch:
 It is standard practice to create a branch any time you are working on a shared repository. Do not push changes directly to `develop`, `main`, etc. 
@@ -87,17 +90,19 @@ Open any text editor and edit a file in the repository
 GitHub Desktop handles staging mostly automatically. On the left-hand side, you can see all of the files that will make it into the commit, and exactly what was changed on each one.
 
 ## Commit your changes
-
-
-## Check the status
+Use the editor in the bottom-left of GitHub Desktop to write a summary and description for your changes.
+- There is lots of guidance available for how to write these, but generally the summary should breifly describe the changes, and the description should explain why they were necessary
+- https://easydynamics.sharepoint.com/sites/msd/SitePages/Git-Basics.aspx for more on writing good commits
 
 ## Push your changes to the remote
+Double check the "history" tab and see what was committed. As of now, these changes still only exist on your local copy of the repository. You need to push to the remote for others to see these changes.
+- Navigate to "publish branch"
 
 ## Open a pull request
 
 ## The pull request gets reviewed and merged
 
-# Basic Troubleshooting
+# Troubleshooting
 
 ## Switching between branches
 You may be working on multiple branches at once. If you try to switch branches while changes are staged, you will be prompted to either keep the changes on the current branch, or bring them over to the branch you are switching to.
@@ -105,7 +110,7 @@ Be careful when switching branches, because GitHub Desktop gives the option to m
 - Most likely, you will want to keep the changes on the current branch
 - Selecting this option will STASH the changes
 - Stashed changes will not appear in your text editor, but will be able to be popped out of the stash when you return to your original branch
-- If you choose to bring your changes over to the new branch, those changes will become staged in that branch
+- If you choose to bring your changes over to the new branch, those changes will become staged in that branch. Be careful doing this as it may lead to a merge conflict
 
 ## Amending commits
 
