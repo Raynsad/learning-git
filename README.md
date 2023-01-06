@@ -149,3 +149,5 @@ This can happen if you resolve a merge conflict or amend a commit and want those
 - https://docs.github.com/en/get-started/learning-about-github/githubs-products
 - https://docs.github.com/en/get-started/using-git/about-git
 - Git courses on Linkedin Learning
+
+I wish to add a line.
