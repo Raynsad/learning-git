@@ -92,7 +92,7 @@ GitHub Desktop handles staging mostly automatically. On the left-hand side, you 
 
 ## Commit your changes
 Use the editor in the bottom-left of GitHub Desktop to write a summary and description for your changes.
-- There is lots of guidance available for how to write these, but generally the summary should breifly describe the changes, and the description should explain why they were necessary
+- There is lots of guidance available for how to write these, but generally the summary should breifly describe the changes, and the description should explain why they were made
 - https://easydynamics.sharepoint.com/sites/msd/SitePages/Git-Basics.aspx for more on writing good commits
 
 ## Push your changes to the remote
@@ -103,9 +103,19 @@ Double check the "history" tab and see what was committed. As of now, these chan
 - Use these to keep the local and remote in sync as needed
 
 ## Open a pull request
+### What is a pull request?
+- A feature of GitHub that allows code to be formally checked and reviewed before it is merged from one branch to another
 
+Once the remote copy of your feature branch is up to date with all the necessary changes, open a pull request from GitHub Desktop.
+- This will open GitHub in the browser
+- Set the target branch as "main"
+- Write a summary and description for the PR, describing all the commits you want to merge into the main branch
 
 ## The pull request gets reviewed and merged
+- An owner, admin, developer, etc. who has permission will review your changes
+- In a real setting, GitHub provides branch protection settings so that not just any code can get merged. For example, a project may require that 2 developers approve code before it can be merged
+- Once the code is approved, it can be merged
+- Git automatically moves all the changes to the main branch and updates the history
 
 # Troubleshooting
 
