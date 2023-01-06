@@ -50,6 +50,7 @@ The industry standard distributed version control system
 - Contains all the history information
 - Contains all the branches
 - Contains git-specific files (.git, .gitignore, ...)
+
 ### Cloning the remote:
 In our case, the remote repository lives in GitHub.
 
@@ -113,6 +114,11 @@ Be careful when switching branches, because GitHub Desktop gives the option to m
 - If you choose to bring your changes over to the new branch, those changes will become staged in that branch. Be careful doing this as it may lead to a merge conflict
 
 ## Amending commits
+If you write a commit you need to go back and change, you may amend it
+- Right click on a commit in the history and select "amend"
+- You will see your staged changes, as if you were creating a new commit
+- You may also edit the summary and description
+- NOTE: ALL of the staged changes will become a part of the commit you are amending
 
 ## Merge conflicts
 Sometimes, you change a file in a way that git cannot automatically resolve those changes.
