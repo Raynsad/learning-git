@@ -2,9 +2,7 @@
 The industry standard distributed version control system
 
 ## What problem does it solve?
-- Alice and Bob are working on a project together for school
-- They need to share code and turn it in
-- They don't know the proper way to do this, so they paste their code into a Google Doc
+Alice and Bob are working on a project together for school in which they need to share code and turn it in. However, they don't know the proper way to do this, so they paste their code into a Google Doc.
 
 ### Problem 1:
 - Alice and Bob copy the Google Doc into their own IDE's
@@ -13,7 +11,7 @@ The industry standard distributed version control system
 - They cannot tell which parts of the code were written by who, nor can they merge the two versions together without a ton of effort
 
 ### Problem 2:
-- The night before submitting the project, both Alice and Bob make changes to different parts of the code
+- Both Alice and Bob make changes to different parts of the code
 - They compile the code and the program breaks. They want to go back to an old version to try and fix the breaking changes
 - How do they revert JUST the breaking changes?
 
@@ -138,6 +136,7 @@ If you write a commit you need to go back and change, you may amend it
 Sometimes, you change a file in a way that git cannot automatically resolve those changes.
 - This can happen if you bring changes over from a branch that has different history
 - Git will try its best to neatly resolve changes, but likely you will encounter a manual merge conflict, as it appears here in Visual Studio:
+![image](https://user-images.githubusercontent.com/43356777/211063537-6b50ff15-a056-4948-97e3-9338dc813cb0.png)
 
 ## Force pushing
 Sometimes, your local branch's history can get out of sync with its remote counterpart.
