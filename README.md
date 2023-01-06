@@ -1,5 +1,5 @@
 # What is Git?
-	- the industry standard distributed version control system
+The industry standard distributed version control system
 
 ## What problem does it solve?
 - Alice and Bob are working on a project together for school
@@ -24,11 +24,10 @@
 - The night before submission is due, Evil Eve logs onto their Google Doc and makes breaking changes in their code
 - Alice and Bob have no way of stopping this from happening, nor do they have any record of what was changed and when
 
-## Enter Git:
+## Enter Git
 - Git organizes your code into commits, which are atomic sets of changes to the code.
-- A commit looks like this:
-	- File diff, author, timestamp, previous change hash
-- Git will store these commits as a log that looks like this:
+- A commit contains: file diff, author, timestamp, previous change hash
+- Git will store these commits as a log that shows the history of commits
 - Git supplies many useful commands to create, edit, roll back, publish, merge, etc.
 - We will get into the specifics of how this works when we run through a demo
 
@@ -44,11 +43,31 @@
 - A database of change requests, comments, and approvals
 - Other cool stuff outside the scope of this demo
 
-#Demo time
+# Demo time
 
 ## Clone a repository
+### What is a repository?
+- The place where the code lives
+- Contains source code
+- Contains all the history information
+- Contains all the branches
+### Cloning the remote:
+In our case, the remote repository lives in GitHub.
+
+Navigate to this repository in GitHub Desktop.
+- Choose a file path where you want this repository to be saved in your local file system
+- This file path will contain your local copy of the repository
+- Your local repository is set up to push and pull changes from the remote
 
 ## Create a branch
+### What is a branch?
+- A version of the source code within the repository
+- Each branch contains its own history of commits
+- Typically, a branch is used for individual development and then merged into a main branch
+- When you create a branch for the purpose of making a change, adding a feature, or fixing an issue, it is called a feature branch.
+
+### Creating the branch:
+It is standard practice to create a branch any time you are working on a shared repository. Do not push changes directly to `develop`, `main`, etc. 
 
 ## Write some code
 
