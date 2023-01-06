@@ -98,8 +98,12 @@ Use the editor in the bottom-left of GitHub Desktop to write a summary and descr
 ## Push your changes to the remote
 Double check the "history" tab and see what was committed. As of now, these changes still only exist on your local copy of the repository. You need to push to the remote for others to see these changes.
 - Navigate to "publish branch"
+- This creates an identical branch with the same name on the remote. Others can access this branch now
+- Once the branch is published, the button will change to "fetch origin" or "push," depending on the state of your history
+- Use these to keep the local and remote in sync as needed
 
 ## Open a pull request
+
 
 ## The pull request gets reviewed and merged
 
