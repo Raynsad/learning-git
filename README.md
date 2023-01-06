@@ -51,6 +51,7 @@ The industry standard distributed version control system
 - Contains source code
 - Contains all the history information
 - Contains all the branches
+- Contains git-specific files (.git, .gitignore, ...)
 ### Cloning the remote:
 In our case, the remote repository lives in GitHub.
 
@@ -69,11 +70,24 @@ Navigate to this repository in GitHub Desktop.
 ### Creating the branch:
 It is standard practice to create a branch any time you are working on a shared repository. Do not push changes directly to `develop`, `main`, etc. 
 
-## Write some code
+Navigate to "current branch" in GitHub desktop and select "new branch."
+- Notice the pop-up specifying which branch this new branch will be based off of; your new branch will start out as a copy
+- This branch now exists in your local repository, but not the remote
 
-## Stage the files you changed
+## Write some code
+Open any text editor and edit a file in the repository
+- Some IDE's and text editors have built-in git functionality or plugins, such as Visual Studio Code
+- These are optional; as long as you save the changes from any editor, git will track them
+
+## Stage  your changes
+### What is staging?
+- Simply saving changes to a file does not automatically add them to git's history
+- Notice how GitHub Desktop displays changes in its UI once you save the file
+- These are the staged changes, AKA the changes that will make it into your next commit
+GitHub Desktop handles staging mostly automatically. On the left-hand side, you can see all of the files that will make it into the commit, and exactly what was changed on each one.
 
 ## Commit your changes
+
 
 ## Check the status
 
@@ -82,6 +96,12 @@ It is standard practice to create a branch any time you are working on a shared 
 ## Open a pull request
 
 ## The pull request gets reviewed and merged
+
+# Basic Troubleshooting
+
+## Switching between branches
+
+## Amending commits
 
 # Where do I go to learn more?
 - https://docs.github.com/en/get-started/learning-about-github/githubs-products
