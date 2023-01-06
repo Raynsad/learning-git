@@ -100,8 +100,26 @@ GitHub Desktop handles staging mostly automatically. On the left-hand side, you 
 # Basic Troubleshooting
 
 ## Switching between branches
+You may be working on multiple branches at once. If you try to switch branches while changes are staged, you will be prompted to either keep the changes on the current branch, or bring them over to the branch you are switching to.
+Be careful when switching branches, because GitHub Desktop gives the option to move changes from branch to branch with a single button click.
+- Most likely, you will want to keep the changes on the current branch
+- Selecting this option will STASH the changes
+- Stashed changes will not appear in your text editor, but will be able to be popped out of the stash when you return to your original branch
+- If you choose to bring your changes over to the new branch, those changes will become staged in that branch
 
 ## Amending commits
+
+## Merge conflicts
+Sometimes, you change a file in a way that git cannot automatically resolve those changes.
+- This can happen if you bring changes over from a branch that has different history
+- Git will try its best to neatly resolve changes, but likely you will encounter a manual merge conflict, as it appears here in Visual Studio:
+
+## Force pushing
+Sometimes, your local branch's history can get out of sync with its remote counterpart.
+This can happen if you resolve a merge conflict or amend a commit and want those changes to exist on the remote copy of the feature branch. This will also happen if you make changes on an outdated version of the code.
+- GitHub Desktop will prompt you with a warning if you try to push changes that require a force push
+- Be VERY careful when force pushing. Only ever force push to your own feature branch - never a branch that others are working on
+- Try to avoid needing to do this by keeping a neat commit history and keeping your local and remote branches in sync
 
 # Where do I go to learn more?
 - https://docs.github.com/en/get-started/learning-about-github/githubs-products
